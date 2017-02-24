@@ -117,7 +117,7 @@ public class CommentRecyclerViewAdapter extends RecyclerView.Adapter<CommentRecy
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("Volley", error.getMessage());
+//                Log.e("Volley", error.getMessage());
             }
         });
 

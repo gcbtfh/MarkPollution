@@ -126,7 +126,7 @@ public class ReportMgrRecyclerViewAdapter extends RecyclerView.Adapter<ReportMgr
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(context, error.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.e("Volley", error.getMessage());
+//                Log.e("Volley", error.getMessage());
             }
         });
 
@@ -147,7 +147,7 @@ public class ReportMgrRecyclerViewAdapter extends RecyclerView.Adapter<ReportMgr
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(context, error.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.e("Volley", error.getMessage());
+//                Log.e("Volley", error.getMessage());
             }
         });
 
