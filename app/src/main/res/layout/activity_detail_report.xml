@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:maps="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/headerLayouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:weightSum="2">
+
+            <fragment
+                android:id="@+id/mapDetail"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                maps:liteMode="true"
+                maps:mapType="normal" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainLayouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayouts"
+            android:background="@android:color/white"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <ImageView
+                android:id="@+id/imageViewDetail"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="3sp"
+                android:src="@drawable/ic_apps" />
+
+            <TextView
+                android:id="@+id/textViewTimeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5sp"
+                android:text="hh:mm:ss dd/MM/yyyy" />
+
+            <TextView
+                android:id="@+id/textViewEmailDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewAvatarDetail"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewTimeDetail"
+                android:text="user@gmail.com"
+                android:textColor="@color/timestamp" />
+
+            <ImageView
+                android:id="@+id/imageViewAvatarDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTimeDetail"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/textViewEmailDetail"
+                android:layout_toStartOf="@+id/textViewEmailDetail"
+                maps:srcCompat="@drawable/vi_icon" />
+
+            <ImageView
+                android:id="@+id/imageViewSpam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textViewEmailDetail"
+                android:src="@drawable/ic_spam_grey" />
+
+            <ImageView
+                android:id="@+id/imageViewResolved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEmailDetail"
+                android:layout_toLeftOf="@+id/imageViewSpam"
+                android:layout_toStartOf="@+id/imageViewSpam"
+                android:paddingRight="5sp"
+                android:paddingEnd="5sp"
+                android:src="@drawable/ic_has_resolved_grey" />
+
+            <ImageView
+                android:id="@+id/imageViewDelete_Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEmailDetail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="5sp"
+                android:paddingRight="5sp"
+                android:src="@drawable/ic_delete"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageViewResolved_Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEmailDetail"
+                android:layout_toLeftOf="@+id/imageViewDelete_Admin"
+                android:layout_toStartOf="@+id/imageViewDelete_Admin"
+                android:paddingRight="5sp"
+                android:paddingEnd="5sp"
+                android:src="@drawable/ic_spam"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textViewCategoryDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageViewResolved"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/style_boder_backgrounblue"
+                android:text="Thermal Pollution"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewAvatarDetail"
+                android:layout_toRightOf="@+id/imageViewDetail"
+                android:layout_toEndOf="@+id/imageViewDetail"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1" />
+            <TextView
+                android:id="@+id/textViewRateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="5sp"
+                android:layout_toRightOf="@id/ratingBar"
+                android:layout_toEndOf="@+id/ratingBar"
+                android:layout_below="@+id/imageViewAvatarDetail"
+                android:text="999 rated"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:background="@drawable/texview_design"
+                android:textStyle="normal|italic" />
+
+            <TextView
+                android:id="@+id/textViewTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageViewDetail"
+                android:padding="5sp"
+                android:text="This is report title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textViewDescDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:paddingBottom="5sp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTitleDetail"
+                android:text="This is report's description This is report's description This is report's description This is report's description This is report's description This is report's description" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/footerLayouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainLayouts">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewComment"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5sp"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/footerLayouts1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/footerLayouts"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/style_boder_comment">
+
+            <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_toLeftOf="@+id/imageViewSendComment"
+                android:ems="10"
+                android:hint="@string/hint_Comment"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageViewSendComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                maps:srcCompat="@drawable/ic_send" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

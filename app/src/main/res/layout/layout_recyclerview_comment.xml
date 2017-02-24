@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/style_border_recyleviewcomment"
+    android:paddingTop="3sp"
+    android:paddingBottom="3sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageViewAvatarComment" />
+
+    <TextView
+        android:text="Hung Tong Phuoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewAvatarComment"
+        android:layout_toRightOf="@+id/imageViewAvatarComment"
+        android:layout_toEndOf="@+id/imageViewAvatarComment"
+        android:id="@+id/textViewNameComment"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="normal|bold"
+        android:textColor="@color/comment"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:text="12:03 22/10/2016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewNameComment"
+        android:layout_toRightOf="@+id/textViewNameComment"
+        android:layout_toEndOf="@+id/textViewNameComment"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:id="@+id/textViewTimeComment"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/textViewComment"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:textColor="#000000"
+        android:text="I have seen this point. It is very pollution"
+        android:layout_below="@+id/imageViewAvatarComment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

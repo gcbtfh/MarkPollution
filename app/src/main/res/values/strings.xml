@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">MarkPollution</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="slide_1_title">How to reduce pollution
+        to day ???</string>
+    <string name="slide_1_desc">This entire planet is our home. We are the only species that systematically destroy our own habitat.
+— Marianne Williamson</string>
+
+    <string name="slide_2_title">Pollution is Our Problem</string>
+    <string name="slide_2_desc">The action or process of making land, water, air, etc., dirty and not safe or suitable to use !
+    If we heal the earth, we heal ourselves</string>
+
+    <string name="slide_3_title">What do you think?</string>
+    <string name="slide_3_desc">One person alone cannot save the planet’s biodiversity, but each individual’s effort to encourage nature’s wealth must not be underestimated.!</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="introtitle">MarkPollution</string>
+    <string name="button_choosefromgallery">Choose from Gallery</string>
+    <string name="button_capture">Take a Photo</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="hint_Title">Input title here</string>
+    <string name="hint_Description">Input description here</string>
+    <string name="menu_recent">Recent Pollutions</string>
+    <string name="menu_nearby">Nearby Pollutions</string>
+    <string name="menu_serious">Serious Pollutions</string>
+    <string name="menu_report_manager">Report Management</string>
+    <string name="menu_system">System</string>
+    <string name="menu_adminnistrative">Adminnistrative Portal</string>
+    <string name="tvRefresh">New pollution point(s) have reported! \nClick here to reload...</string>
+    <string name="tvNewreport">Choose pollution point then click </string>
+    <string name="conection_good">Good! Connected to Internet</string>
+    <string name="conection_error">Good! Connected to Internet</string>
+    <string name="register_success">Account has registered successful</string>
+    <string name="loadingdata">Loading data...</string>
+    <string name="tvEnglish">English</string>
+    <string name="tvVietNam">Vietnamese</string>
+    <string name="hint_Comment">Type your comment here...</string>
+    <string name="delete_byadmin">This report is removed by administrator. Click OK to return previous screen.</string>
+    <string name="askdelete_byadmin">Are you sure delete this report?</string>
+    <string name="delete_successfull">Delete pollution successful</string>
+    <string name="uncheck_resolve">You have unchecked resolve</string>
+    <string name="uncheck_spam">You have unchecked spam</string>
+    <string name="check_resolve">Check resolved successful</string>
+    <string name="check_spam">Spam successful</string>
+    <string name="title_inforwindow">This is Pollution Point</string>
+    <string name="insert_report_success">Insert pollution successful</string>
+    <string name="select_category">Select category</string>
+    <string name="menu_heatMaps">View Heatmap</string>
+    <string name="tvByMarkPo">By MarkPollution</string>
+    <string name="action_close">Close</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_setups">Setups</string>
+
+    <!-- Example General settings -->
+    <string name="pref_title_radius">Radius (km)</string>
+    <string name="pref_default_radius">5</string>
+
+    <string name="pref_title_language">Language</string>
+    <string name="warning">Warning</string>
+    <string name="title_ask_setting">Apply setting ?</string>
+    <string name="desc_ask_setting">Restart apps to change language.</string>
+    <string name="land_pollution">Land pollution</string>
+    <string name="water_pollution">Water pollution</string>
+    <string name="air_pollution">Air pollution</string>
+    <string name="thermal_pollution">Thermal pollution</string>
+    <string name="light_pollution">Light pollution</string>
+    <string name="noise_pollution">Noise pollution</string>
+    <string name="sending">Sending...</string>
+    <string name="ask_quit">Are you sure quit ?</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="action_ok">OK</string>
+    <string name="show_all">Show all</string>
+    <string name="hello">Hello</string>
+    <string name="signin_as">Signed in as</string>
+    <string name="currentver">Current version :</string>
+    <string name="devby">Developer by MarkPollution Team</string>
+    <string name="addline1">137 Nguyen Thi Thap Street, District Lien Chieu,</string>
+    <string name="addline2">Da Nang City, Viet Nam</string>
+    <string name="rateus">Rate this App</string>
+    <string-array name="pref_example_list_titles">
+        <item>English</item>
+        <item>Vietnamese</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>en</item>
+        <item>vi</item>
+    </string-array>
+</resources>

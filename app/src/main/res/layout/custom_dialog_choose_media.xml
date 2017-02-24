@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/style_dialog"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/capture_icon"
+        />
+    <TextView
+        android:id="@+id/textViewCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_capture"
+        android:gravity="center|start"
+        android:layout_toRightOf="@+id/image1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/image2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@drawable/gallery_icon"
+        android:layout_marginTop="@dimen/feed_item_corner_radius"
+        android:id="@+id/image2"
+        android:layout_below="@+id/image1"/>
+    <TextView
+        android:id="@+id/textViewGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="@string/button_choosefromgallery"
+        android:layout_toRightOf="@+id/image2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/image1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/image2" />
+
+</RelativeLayout>

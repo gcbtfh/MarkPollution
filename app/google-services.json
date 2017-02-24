@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "62807479997",
+    "firebase_url": "https://markpollution.firebaseio.com",
+    "project_id": "markpollution",
+    "storage_bucket": "markpollution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62807479997:android:63a770b10a7bf18b",
+        "android_client_info": {
+          "package_name": "com.project.markpollution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62807479997-90fkub1s4okl2gqqu2bfg6hpu2hck3sm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "62807479997-0clhpbnp1cstcarcokk6b1p22868d94f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.markpollution",
+            "certificate_hash": "b8e5aae7e9e196659c471d9dd69e4d6eb0beaf18"
+          }
+        },
+        {
+          "client_id": "62807479997-uqvp70hn81svqogdffh4ks6egqr73p75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkWqHhmsmRVrB5OdFqQdqCZZ1DR_Uh5aI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62807479997-90fkub1s4okl2gqqu2bfg6hpu2hck3sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62807479997:android:5bcaab296d880e86",
+        "android_client_info": {
+          "package_name": "android.demo.fpt.viewpagerasynctaskdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62807479997-6j2hghq3a4n8d5057io7kras2jibhp0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.demo.fpt.viewpagerasynctaskdemo",
+            "certificate_hash": "b8e5aae7e9e196659c471d9dd69e4d6eb0beaf18"
+          }
+        },
+        {
+          "client_id": "62807479997-90fkub1s4okl2gqqu2bfg6hpu2hck3sm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "62807479997-uqvp70hn81svqogdffh4ks6egqr73p75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkWqHhmsmRVrB5OdFqQdqCZZ1DR_Uh5aI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62807479997-90fkub1s4okl2gqqu2bfg6hpu2hck3sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

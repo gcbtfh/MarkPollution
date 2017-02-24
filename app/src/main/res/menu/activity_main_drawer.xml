@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recentPo"
+            android:icon="@drawable/ic_recent"
+            android:title="@string/menu_recent"/>
+        <item
+            android:id="@+id/nav_nearbyPo"
+            android:icon="@drawable/ic_nearby"
+            android:title="@string/menu_nearby"/>
+        <item
+            android:id="@+id/nav_seriousPo"
+            android:icon="@drawable/ic_serious"
+            android:title="@string/menu_serious"/>
+        <item
+            android:id="@+id/nav_reportMgr"
+            android:icon="@drawable/ic_report_mgr"
+            android:title="@string/menu_report_manager"/>
+        <item
+            android:id="@+id/nav_heatMaps"
+            android:icon="@drawable/ic_heatmap"
+            android:title="@string/menu_heatMaps"/>
+    </group>
+    <item android:title="@string/menu_system">
+        <menu>
+            <item
+                android:id="@+id/nav_admin"
+                android:icon="@drawable/ic_admin"
+                android:title="@string/menu_adminnistrative"
+                android:visible="false"/>
+            <item android:id="@+id/nav_setting"
+                  android:icon="@drawable/ic_menu_manage"
+                  android:title="@string/action_settings"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/action_logout"/>
+        </menu>
+    </item>
+
+</menu>

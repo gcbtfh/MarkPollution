@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardBackgroundColor="#bee3f2fd"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCateFeed"
+            android:layout_width="@dimen/feed_item_cate_pic"
+            android:layout_height="@dimen/feed_item_cate_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/land_icon" />
+
+        <TextView
+            android:id="@+id/tvTitleFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivPictureFeed"
+            android:layout_toRightOf="@+id/ivCateFeed"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/feed_item_margin"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/tvTimeFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleFeed"
+            android:layout_toLeftOf="@+id/ivPictureFeed"
+            android:layout_toRightOf="@id/ivCateFeed"
+            android:paddingLeft="@dimen/feed_item_margin"
+            android:text="time"
+            android:textColor="@color/timestamp"
+            android:textStyle="italic"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvDescFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTimeFeed"
+            android:layout_toLeftOf="@+id/ivPictureFeed"
+            android:layout_toRightOf="@id/ivCateFeed"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/feed_item_margin"
+            android:text="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription" />
+
+        <ImageView
+            android:id="@+id/ivPictureFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/waste"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

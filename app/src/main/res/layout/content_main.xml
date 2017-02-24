@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.project.markpollution.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Spinner
+        android:id="@+id/spnCateMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spnCateMap">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:mapType="normal"
+            tools:context="com.project.markpollution.MainActivity" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="@dimen/fab_margin_top"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:menu_colorPressed="@color/colorPrimary"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_size="mini"
+            fab:menu_labels_colorNormal="@color/colorPrimary"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            app:menu_icon="@drawable/ic_category"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="5dp"
+            fab:menu_labels_position="right"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#FFFFFF"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="down"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_landPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/land_icon_fab"
+                app:fab_colorNormal="#B52B2B"
+                fab:fab_label="@string/land_pollution"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_waterPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/water_icon_fab"
+                fab:fab_colorNormal="#4ABA70"
+                fab:fab_label="@string/water_pollution"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_airPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/air_icon_fab"
+                app:fab_colorNormal="#455B58"
+                fab:fab_label="@string/air_pollution"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_thermalPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thermal_icon_fab"
+                fab:fab_colorNormal="#E87F2E"
+                fab:fab_label="@string/thermal_pollution"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_lightPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_icon_fab"
+                app:fab_colorNormal="#1F88CA"
+                fab:fab_label="@string/light_pollution"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_noisePO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/noise_icon_fab"
+                app:fab_colorNormal="#EFC416"
+                fab:fab_label="@string/noise_pollution"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_allPO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/show_all"
+                app:fab_colorNormal="#FF4081"
+                fab:fab_label="@string/show_all"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgGetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/add_marker"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/texview_design"
+                android:paddingEnd="5sp"
+                android:paddingStart="5sp"
+                android:text="@string/tvRefresh"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <SlidingDrawer
+        android:id="@+id/simpleSlidingDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:gravity="end"
+        android:handle="@+id/handle"
+        android:orientation="horizontal"
+        android:rotation="360">
+        <!--what is rotation?-->
+        <ImageButton
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ca20d2bb"
+            android:rotation="270"
+            android:src="@drawable/ic_expand_00010"
+            android:text="Open"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:rotation="360">
+            <!--why horizontal-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>
